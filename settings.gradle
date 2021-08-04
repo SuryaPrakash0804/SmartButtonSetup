@@ -1,0 +1,3 @@
+rootProject.name='SmartButton'
+include ':app'
+include ':smartbutton'

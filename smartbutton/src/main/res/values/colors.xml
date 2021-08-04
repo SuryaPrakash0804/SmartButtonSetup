@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0a880a</color>
+    <color name="colorPrimaryDark">#00a900</color>
+    <color name="colorAccent">#0a880a</color>
+
+
+    <color name="Red">#EA252B</color>
+
+
+
+    <color name="Black">#000000</color>
+
+
+
+    <color name="packageplan_selector">#dcffdc</color>
+
+    <color name="disable">#60DD60</color>
+
+    <color name="chat_bg">#A979F179</color>
+
+    <color name="brown">#8F9EAA</color>
+
+    <color name="Blue_Underline">#2659b1</color>
+
+    <color name="App_Background">#f5f5f8</color>
+
+    <color name="rb_unselected">#B3B0B0</color>
+
+    <color name="Gray">#B3B0B0</color>
+
+    <color name="BottomNaavigation">#0a880a</color>
+
+
+
+    <color name="rippelColor">#0099CC</color>
+
+    <color name="Green">#23B329</color>
+
+    <color name="test">#00a900</color>
+
+
+
+    <color name="colorRouteLine">#0422BD</color>
+
+
+
+    <color name="Text_color">#151515</color>
+
+    <color name="rb_selected">#00a900</color>
+    <color name="White">#ffff</color>
+</resources>

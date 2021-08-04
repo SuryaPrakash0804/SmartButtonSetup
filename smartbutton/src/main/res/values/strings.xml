@@ -1,0 +1,22 @@
+<resources>
+    <string name="ira_smart_button">IRA Smart Button</string>
+    <string name="ira_smart_watch">IRA Smart Watch</string>
+    <string name="setup_ira_smart_button">Setup IRA Smart Button</string>
+    <string name="terms_and_policy"><![CDATA[Read our Terms & Policies.]]>
+        \n Please read our Privacy Policy,
+    for how we use and protect personal information that we receive from your phone through IRA smart
+    devices viz., Smart Device, Smart Watch. Here are some key points: \nIRA Smart Devices lets you
+    activate SOS on the Herdum App without you having to hold your phone and tap SOS button on the
+     Herdum App. There are 2 options for this: \na) Pressure Mode: quick press twice the SOS button on
+      the IRA Smart Device b) Voice Mode: voice activate SOS by speaking your pre-recorded call-out.
+      A call-out is a unque combination of two words of your choice. /nIRA Smart Watch, uses it’s own and
+       the phone’s sensors, and lets you trac basic data including steps, distance, and calories burned.
+       You can learn more here. /nWe use the information we receive to deliver our services, improve them,
+        and research and develop new ones. In particular, we use the infrmation to personlize our services,
+         make inferences, and show you more relevant content. /nYou can deactivate IRA Smart Device through
+         your Herdum app’s My Profile settings. You can always delete your account at any time. /nI agree to
+          Herdum using my information, including the information collected via IRA Smart device, in the ways
+           described in the Privacy Policy, and summarized above. I understand that I can later withdraw this
+           consent using My Profile settings or other tools for deleting my account.</string>
+    <string name="deny_don_t_ask_again"><![CDATA[Deny & Don\'t ask again]]></string>
+</resources>

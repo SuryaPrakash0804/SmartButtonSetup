@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zestminds.smartbuttonsdk">
+
+    <application android:supportsRtl="true">
+        <activity android:name=".activity.Paring_Activity"></activity>
+        <activity android:name=".activity.SwitchOnSmartButton_Activity" />
+        <activity android:name=".activity.TermsCondition_Activity" />
+        <activity android:name=".activity.Start_Activity" />
+    </application>
+
+</manifest>
