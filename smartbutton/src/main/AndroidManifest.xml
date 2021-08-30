@@ -3,7 +3,12 @@
     package="com.zestminds.smartbuttonsdk">
 
     <application android:supportsRtl="true">
-        <activity android:name=".activity.Paring_Activity"></activity>
+        <activity android:name=".activity.TagDeviceToPhone_Activity"></activity>
+        <activity android:name=".activity.InstallDevice_Activity" />
+        <activity android:name=".activity.VerifyingDeviceID_Activity" />
+        <activity android:name=".activity.QRCode_Activity" />
+        <activity android:name=".activity.Installing_Device_Activity" />
+        <activity android:name=".activity.Paring_Activity" />
         <activity android:name=".activity.SwitchOnSmartButton_Activity" />
         <activity android:name=".activity.TermsCondition_Activity" />
         <activity android:name=".activity.Start_Activity" />

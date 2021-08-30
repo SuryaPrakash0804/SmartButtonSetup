@@ -31,7 +31,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:cardCornerRadius="@dimen/dp4"
             app:cardElevation="@dimen/dp4"
-
+            android:visibility="gone"
             android:layout_marginTop="@dimen/dp55"
             android:layout_marginStart="@dimen/dp15"
             android:layout_marginEnd="@dimen/dp15"
@@ -129,6 +129,263 @@
 
         </androidx.cardview.widget.CardView>
 
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardtimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:cardCornerRadius="@dimen/dp4"
+        app:cardElevation="@dimen/dp4"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dp55"
+        android:layout_marginStart="@dimen/dp15"
+        android:layout_marginEnd="@dimen/dp15"
+        android:layout_marginBottom="@dimen/dp65"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title">
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/dp25"
+
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                android:text="We are locating the Herdum Switch"
+                android:gravity="center"
+                android:drawablePadding="@dimen/dp8"
+                android:layout_marginStart="@dimen/dp15"
+
+                android:layout_marginTop="@dimen/dp15"
+                android:id="@+id/tv_lbl1"
+                android:textColor="@color/Text_color"
+                tools:ignore="RtlCompat" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:id="@+id/rl_button1"
+                app:layout_constraintTop_toBottomOf="@+id/tv_lbl1"
+                >
+
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp250"
+
+                    android:layout_margin="@dimen/dp35"
+                    android:id="@+id/iv_button1"
+                    android:padding="@dimen/dp50"
+                    android:src="@drawable/loading"
+
+
+                    />
+
+
+            </RelativeLayout>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Pairing"
+                android:background="@drawable/rectangel_submit_button"
+                android:textColor="@color/White"
+                android:paddingStart="@dimen/dp25"
+                android:paddingEnd="@dimen/dp25"
+                android:paddingBottom="@dimen/dp7"
+                android:paddingTop="@dimen/dp7"
+                android:id="@+id/tv_continue1"
+                app:layout_constraintTop_toBottomOf="@+id/rl_button1"
+                android:layout_marginTop="@dimen/dp25"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+
+                />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/try_again"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:cardCornerRadius="@dimen/dp4"
+        app:cardElevation="@dimen/dp4"
+        android:visibility="visible"
+        android:layout_marginTop="@dimen/dp55"
+        android:layout_marginStart="@dimen/dp15"
+        android:layout_marginEnd="@dimen/dp15"
+        android:layout_marginBottom="@dimen/dp65"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title">
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/dp25"
+
+
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp35"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:drawableLeft="@drawable/ic_check_with_green"
+                android:drawablePadding="@dimen/dp15"
+                android:layout_marginStart="@dimen/dp15"
+                android:layout_marginEnd="@dimen/dp15"
+                android:id="@+id/tv_lbl1check"
+                android:textSize="@dimen/sp12"
+                android:text="@string/switch_off_and_then_switch_on_your_ira_smart_device_and_retry_pairing_the_device_to_your_phone"
+                android:textColor="@color/Text_color"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:drawableLeft="@drawable/ic_check_with_green"
+                android:drawablePadding="@dimen/dp15"
+                android:layout_marginStart="@dimen/dp15"
+                app:layout_constraintTop_toBottomOf="@+id/tv_lbl1check"
+                android:layout_marginEnd="@dimen/dp15"
+                android:id="@+id/tv_lblcheck2"
+                android:textSize="@dimen/sp12"
+                android:text="@string/if_that_didn_t_work_your_ira_smart_device_may_not_be_charged_please_charge_it_for_2_hours"
+                android:textColor="@color/Text_color"
+
+
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:drawableLeft="@drawable/ic_check_with_green"
+                android:drawablePadding="@dimen/dp15"
+                android:layout_marginStart="@dimen/dp15"
+                app:layout_constraintTop_toBottomOf="@+id/tv_lblcheck2"
+                android:layout_marginEnd="@dimen/dp15"
+                android:id="@+id/tv_lblcheck3"
+                android:textSize="@dimen/dp12"
+                android:text="@string/after_the_ira_smart_device_is_charged_to_switch_it_on_press_down_and_hold_for_5_second_the_panic_button"
+                android:textColor="@color/Text_color"
+
+
+                />
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:id="@+id/rl_animbutton"
+                app:layout_constraintTop_toBottomOf="@+id/tv_lblcheck3"
+                >
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp320"
+
+                    app:lottie_rawRes="@raw/rimple_loader"
+                    app:lottie_loop="true"
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp250"
+
+                    android:layout_margin="@dimen/dp35"
+                    android:id="@+id/iv_bluetoothbutton"
+                    android:padding="@dimen/dp70"
+                    android:src="@drawable/gray_bluetooth_button"
+
+
+                    />
+
+
+            </RelativeLayout>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Try Again"
+                android:background="@drawable/rectangel_submit_button"
+                android:textColor="@color/White"
+                android:paddingStart="@dimen/dp25"
+                android:paddingEnd="@dimen/dp25"
+                android:paddingBottom="@dimen/dp7"
+                android:paddingTop="@dimen/dp7"
+                android:id="@+id/tv_tryagain"
+                app:layout_constraintTop_toBottomOf="@+id/rl_animbutton"
+                android:layout_marginTop="@dimen/dp25"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+
+                />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
 
 
 

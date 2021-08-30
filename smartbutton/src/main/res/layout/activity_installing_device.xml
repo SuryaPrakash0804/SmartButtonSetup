@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/App_Background"
+    tools:context=".activity.Installing_Device_Activity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:background="@color/packageplan_selector"
+        android:text="Install Device"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/tv_title"
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_marginTop="@dimen/dp55"
+
+        android:fitsSystemWindows="true"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="@dimen/dp4"
+            app:cardCornerRadius="@dimen/dp4"
+            android:layout_margin="@dimen/dp15"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/dp15"
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enter a name for the device"
+                    android:textColor="@color/Text_color"
+                    android:textSize="@dimen/sp12"
+                    android:layout_marginStart="@dimen/dp7"
+                    android:layout_marginEnd="@dimen/dp7"
+                    android:id="@+id/lbl_name"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp30"
+                    android:background="@color/packageplan_selector"
+                    android:layout_marginStart="@dimen/dp7"
+                    android:layout_marginEnd="@dimen/dp7"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:hint="XYZ device"
+                    android:textColor="@color/Text_color"
+                    android:textSize="@dimen/sp12"
+                    android:id="@+id/et_devicename"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp1"
+                    android:background="@color/Gray"
+                    android:layout_marginTop="@dimen/dp10"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Security Operation"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginTop="@dimen/dp12"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:text="First time software installation"
+                    android:textColor="@color/Text_color"
+                    android:layout_marginStart="@dimen/dp7"
+                    android:layout_marginEnd="@dimen/dp7"
+
+                    />
+                
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="@dimen/dp7"
+                    android:layout_marginEnd="@dimen/dp7"
+                    android:id="@+id/rg_installation_type"
+                    >
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="First time"
+                        android:textSize="@dimen/sp14"
+                        android:checked="true"
+                        android:layout_marginTop="@dimen/dp15"
+
+                        android:button="@null"
+                        android:id="@+id/rb_smartbutton"
+
+                        android:drawableStart="@drawable/custom_radio_selector"
+                        android:textColor="@color/Text_color"
+                        android:paddingEnd="@dimen/dp5"
+                        android:drawablePadding="@dimen/dp10"
+
+                        tools:ignore="RtlCompat" />
+
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Re-install"
+                        android:textSize="@dimen/sp14"
+                        android:checked="false"
+                        android:layout_marginTop="@dimen/dp15"
+                        android:paddingStart="@dimen/dp8"
+                        android:button="@null"
+                        android:id="@+id/rb_reinstall"
+                        android:drawableStart="@drawable/custom_radio_selector"
+                        android:textColor="@color/Text_color"
+                        android:paddingEnd="@dimen/dp5"
+                        android:drawablePadding="@dimen/dp10"
+                        android:paddingLeft="@dimen/dp8"
+                        tools:ignore="RtlCompat" />
+
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Uninstall"
+                        android:textSize="@dimen/sp14"
+                        android:checked="false"
+                        android:layout_marginTop="@dimen/dp15"
+                        android:paddingStart="@dimen/dp8"
+                        android:button="@null"
+                        android:id="@+id/rb_uninstall"
+                        android:drawableStart="@drawable/custom_radio_selector"
+                        android:textColor="@color/Text_color"
+                        android:paddingEnd="@dimen/dp5"
+                        android:drawablePadding="@dimen/dp10"
+                        android:paddingLeft="@dimen/dp8"
+                        tools:ignore="RtlCompat" />
+
+
+                </RadioGroup>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp1"
+                    android:background="@color/Gray"
+                    android:layout_marginTop="@dimen/dp7"
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:text="What is the state of the device"
+                    android:textColor="@color/Text_color"
+                    android:layout_marginStart="@dimen/dp7"
+                    android:layout_marginEnd="@dimen/dp7"
+
+                    />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="@dimen/dp7"
+                    android:layout_marginEnd="@dimen/dp7"
+                    android:id="@+id/rg_stateofdevice"
+                    >
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Device"
+                        android:textSize="@dimen/sp14"
+                        android:checked="true"
+                        android:layout_marginTop="@dimen/dp15"
+
+                        android:button="@null"
+                        android:id="@+id/rb_newdevice"
+
+                        android:drawableStart="@drawable/custom_radio_selector"
+                        android:textColor="@color/Text_color"
+                        android:paddingEnd="@dimen/dp5"
+                        android:drawablePadding="@dimen/dp10"
+
+                        tools:ignore="RtlCompat" />
+
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pre-owned"
+                        android:textSize="@dimen/sp14"
+                        android:checked="false"
+                        android:layout_marginTop="@dimen/dp15"
+                        android:paddingStart="@dimen/dp8"
+                        android:button="@null"
+                        android:id="@+id/rb_preowned"
+                        android:drawableStart="@drawable/custom_radio_selector"
+                        android:textColor="@color/Text_color"
+                        android:paddingEnd="@dimen/dp5"
+                        android:drawablePadding="@dimen/dp10"
+                        android:paddingLeft="@dimen/dp8"
+                        tools:ignore="RtlCompat" />
+
+
+
+
+                </RadioGroup>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp1"
+                    android:background="@color/Gray"
+                    android:layout_marginTop="@dimen/dp10"
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:text="To complete security operation of your IRA Device,scan the QR code printed on the device's packing box"
+                    android:textColor="@color/Text_color"
+                    android:layout_marginStart="@dimen/dp7"
+                    android:layout_marginEnd="@dimen/dp7"
+                    />
+
+                <TextView
+                    android:layout_width="@dimen/dp100"
+                    android:layout_height="@dimen/dp40"
+                    android:background="@drawable/rectangel_submit_button"
+                    android:text="Scan"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginStart="@dimen/dp7"
+
+                    android:textColor="@color/White"
+                    android:gravity="center"
+                    android:id="@+id/tv_submit"
+                    android:layout_marginLeft="@dimen/dp7" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp1"
+                    android:background="@color/Gray"
+                    android:layout_marginTop="@dimen/dp10"
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:text="Confirm the phone to which your IRA device is being synced"
+                    android:textColor="@color/Text_color"
+                    android:layout_marginStart="@dimen/dp7"
+                    android:layout_marginEnd="@dimen/dp7"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="@dimen/dp7"
+                    android:layout_marginTop="@dimen/dp7"
+                    android:layout_marginEnd="@dimen/dp7"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Device Brand: "
+                        android:textColor="@color/colorPrimary"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Oppo 5454 \nthis device"
+                        android:textColor="@color/Text_color"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="@dimen/dp7"
+                    android:layout_marginTop="@dimen/dp7"
+                    android:layout_marginEnd="@dimen/dp7"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Phone Number: "
+                        android:textColor="@color/colorPrimary"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9898979797"
+                        android:textColor="@color/Text_color"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="@dimen/dp7"
+                    android:layout_marginTop="@dimen/dp10"
+
+                    android:layout_marginLeft="@dimen/dp7">
+
+                    <TextView
+                        android:layout_width="@dimen/dp100"
+                        android:layout_height="@dimen/dp35"
+                        android:background="@drawable/rectangel_submit_button"
+                        android:text="Confirm"
+                        android:textColor="@color/White"
+                        android:gravity="center"
+                        android:id="@+id/tv_confirm"
+                        />
+
+                    <TextView
+                        android:layout_width="@dimen/dp100"
+                        android:layout_height="@dimen/dp35"
+                        android:background="@drawable/rectangel_cancel_button"
+                        android:text="Deny"
+                        android:layout_marginStart="@dimen/dp15"
+                        android:textColor="@color/rb_selected"
+                        android:gravity="center"
+                        android:id="@+id/tv_cancel"
+                        android:layout_marginLeft="@dimen/dp15" />
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="@dimen/dp55"
+                    android:layout_height="@dimen/dp55"
+                    android:background="@drawable/circle_button"
+                    android:src="@drawable/ic_baseline_arrow_forward_24"
+                    android:padding="@dimen/dp12"
+                    android:gravity="center"
+                    android:textColor="@color/White"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp15"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_lbl1"
+
+                    />
+
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="@dimen/dp4"
+                app:cardCornerRadius="@dimen/dp4"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Security Operation"
+                        android:layout_marginStart="@dimen/dp10"
+                        android:layout_marginEnd="@dimen/dp10"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_marginTop="@dimen/dp12"
+                        android:layout_gravity="center_horizontal"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+
+                        android:text="What is the state of the device"
+                        android:textColor="@color/Text_color"
+                        android:layout_marginStart="@dimen/dp10"
+                        android:layout_marginEnd="@dimen/dp10"
+
+                        />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="@dimen/dp10"
+                        android:layout_marginEnd="@dimen/dp10"
+                        android:id="@+id/rg_stateofdevice2"
+                        >
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="New Device"
+                            android:textSize="@dimen/sp14"
+                            android:checked="true"
+                            android:layout_marginTop="@dimen/dp15"
+
+                            android:button="@null"
+                            android:id="@+id/rb_newdevice2"
+
+                            android:drawableStart="@drawable/custom_radio_selector"
+                            android:textColor="@color/Text_color"
+                            android:paddingEnd="@dimen/dp5"
+                            android:drawablePadding="@dimen/dp10"
+
+                            tools:ignore="RtlCompat" />
+
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pre-owned"
+                            android:textSize="@dimen/sp14"
+                            android:checked="false"
+                            android:layout_marginTop="@dimen/dp15"
+                            android:paddingStart="@dimen/dp8"
+                            android:button="@null"
+                            android:id="@+id/rb_preowned2"
+                            android:drawableStart="@drawable/custom_radio_selector"
+                            android:textColor="@color/Text_color"
+                            android:paddingEnd="@dimen/dp5"
+                            android:drawablePadding="@dimen/dp10"
+                            android:paddingLeft="@dimen/dp8"
+                            tools:ignore="RtlCompat" />
+
+
+
+
+                    </RadioGroup>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp1"
+                        android:background="@color/Gray"
+                        android:layout_marginTop="@dimen/dp10"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:text="Previous Owner Phone Number"
+                        android:textColor="@color/Text_color"
+                        android:layout_marginStart="@dimen/dp10"
+                        android:layout_marginEnd="@dimen/dp10"
+
+                        />
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp30"
+                        android:background="@color/packageplan_selector"
+                        android:layout_marginStart="@dimen/dp10"
+                        android:layout_marginEnd="@dimen/dp10"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:hint="9898989898"
+                        android:textColor="@color/Text_color"
+                        android:textSize="@dimen/sp12"
+                        android:id="@+id/et_phonenumber"
+                        />
+
+
+
+                    <TextView
+                        android:layout_width="@dimen/dp100"
+                        android:layout_height="@dimen/dp40"
+                        android:background="@drawable/send_otp_button_bg"
+                        android:text="Send OTP"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginStart="@dimen/dp7"
+
+                        android:textColor="@color/White"
+                        android:gravity="center"
+                        android:id="@+id/tv_sendotp"
+                        android:layout_marginLeft="@dimen/dp7" />
+
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp45"
+                        android:layout_marginTop="@dimen/dp20"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/ll_otp"
+
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:layout_width="@dimen/dp40"
+                                android:layout_height="@dimen/dp40"
+                                android:backgroundTint="@color/Blue_Underline"
+                                android:inputType="number"
+                                android:textColor="@color/Text_color"
+                                android:id="@+id/et_otp1"
+                                android:focusable="true"
+                                android:gravity="center"
+                                android:maxLength="1" />
+
+                            <EditText
+                                android:layout_width="@dimen/dp40"
+                                android:layout_height="@dimen/dp40"
+                                android:backgroundTint="@color/Blue_Underline"
+                                android:inputType="number"
+                                android:maxLength="1"
+                                android:gravity="center"
+                                android:textColor="@color/Text_color"
+                                android:id="@+id/et_otp2"
+                                />
+
+                            <EditText
+                                android:layout_width="@dimen/dp40"
+                                android:layout_height="@dimen/dp40"
+                                android:backgroundTint="@color/Blue_Underline"
+                                android:inputType="number"
+                                android:gravity="center"
+                                android:textColor="@color/Text_color"
+                                android:id="@+id/et_otp3"
+                                android:maxLength="1" />
+
+                            <EditText
+                                android:layout_width="@dimen/dp40"
+                                android:layout_height="@dimen/dp40"
+                                android:backgroundTint="@color/Blue_Underline"
+                                android:inputType="number"
+
+                                android:gravity="center"
+                                android:textColor="@color/Text_color"
+                                android:id="@+id/et_otp4"
+                                android:maxLength="1" />
+
+                            <EditText
+                                android:layout_width="@dimen/dp40"
+                                android:layout_height="@dimen/dp40"
+                                android:backgroundTint="@color/Blue_Underline"
+                                android:inputType="number"
+                                android:gravity="center"
+                                android:textColor="@color/Text_color"
+                                android:id="@+id/et_otp5"
+                                android:maxLength="1" />
+
+                            <EditText
+                                android:layout_width="@dimen/dp40"
+                                android:layout_height="@dimen/dp40"
+                                android:backgroundTint="@color/Blue_Underline"
+                                android:inputType="number"
+
+                                android:gravity="center"
+                                android:textColor="@color/Text_color"
+                                android:id="@+id/et_otp6"
+                                android:maxLength="1" />
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/rl_view"
+                            />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Resend OTP"
+                        android:textColor="@color/Text_color"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dp5"
+                        />
+
+
+                    <ImageView
+                        android:layout_width="@dimen/dp55"
+                        android:layout_height="@dimen/dp55"
+                        android:background="@drawable/circle_button"
+                        android:src="@drawable/ic_baseline_arrow_forward_24"
+                        android:padding="@dimen/dp12"
+                        android:gravity="center"
+                        android:layout_marginBottom="@dimen/dp20"
+                        android:textColor="@color/White"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/dp15"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_lbl1"
+
+                        />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

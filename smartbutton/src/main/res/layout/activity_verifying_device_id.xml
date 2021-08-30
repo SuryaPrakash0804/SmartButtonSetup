@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.VerifyingDeviceID_Activity">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:background="@color/packageplan_selector"
+        android:gravity="center"
+
+        android:text="Verifying Device Id"
+        android:textColor="@color/rb_selected"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardtimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:cardCornerRadius="@dimen/dp4"
+        app:cardElevation="@dimen/dp4"
+        android:visibility="visible"
+        android:layout_marginTop="@dimen/dp55"
+        android:layout_marginStart="@dimen/dp15"
+        android:layout_marginEnd="@dimen/dp15"
+        android:layout_marginBottom="@dimen/dp65"
+        >
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/dp25"
+
+
+            >
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:id="@+id/rl_button1"
+                >
+
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp250"
+
+                    android:layout_margin="@dimen/dp35"
+                    android:id="@+id/iv_button1"
+                    android:padding="@dimen/dp50"
+                    android:src="@drawable/loading"
+
+
+                    />
+
+
+            </RelativeLayout>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verifying"
+                android:textColor="@color/Text_color"
+                android:paddingStart="@dimen/dp25"
+                android:paddingEnd="@dimen/dp25"
+                android:paddingBottom="@dimen/dp7"
+                android:paddingTop="@dimen/dp7"
+                android:id="@+id/tv_continue1"
+                app:layout_constraintTop_toBottomOf="@+id/rl_button1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+
+                />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

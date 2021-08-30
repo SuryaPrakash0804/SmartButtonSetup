@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/App_Background"
+    tools:context=".activity.InstallDevice_Activity">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:background="@color/packageplan_selector"
+        android:gravity="center"
+
+        android:text="Install Device"
+        android:textColor="@color/rb_selected"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="@dimen/dp25"
+        android:layout_marginEnd="@dimen/dp25"
+        android:layout_marginTop="@dimen/dp45"
+        android:minHeight="@dimen/dp100"
+        app:cardCornerRadius="@dimen/dp4"
+        app:cardMaxElevation="@dimen/dp4"
+        app:cardBackgroundColor="@color/White"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/dp15"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/the_is_being_synced_in_herdum_server_please_note_that_secure_numbers_have_been_written_inside_the_herdum_software_and_in_the_phone_if_you_agree_press"
+                    android:textColor="@color/Text_color"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Go"
+                    android:background="@drawable/rectangel_submit_button"
+                    android:textColor="@color/White"
+                    android:paddingStart="@dimen/dp35"
+                    android:paddingEnd="@dimen/dp35"
+                    android:paddingBottom="@dimen/dp7"
+                    android:paddingTop="@dimen/dp7"
+                    android:id="@+id/tv_tryagain"
+                    android:layout_marginTop="@dimen/dp5"
+
+                    />
+
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:background="@color/Gray"
+
+                />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/dp15"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Now only the IRA Smart Device and your phone work together. You are all set to use IRA Device in pressure mode. If you want to setup voice-activation tere are few more steps. Do you want to Proceed with?"
+                    android:textColor="@color/Text_color"
+                    />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:id="@+id/rg_stateofdevice2"
+                    >
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pressure Mode"
+                        android:textSize="@dimen/sp14"
+                        android:checked="true"
+                        android:layout_marginTop="@dimen/dp15"
+
+                        android:button="@null"
+                        android:id="@+id/rb_newdevice2"
+
+                        android:drawableStart="@drawable/custom_radio_selector"
+                        android:textColor="@color/Text_color"
+                        android:paddingEnd="@dimen/dp5"
+                        android:drawablePadding="@dimen/dp10"
+
+                        tools:ignore="RtlCompat" />
+
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Voice Activated"
+                        android:textSize="@dimen/sp14"
+                        android:checked="false"
+                        android:layout_marginTop="@dimen/dp15"
+                        android:paddingStart="@dimen/dp8"
+                        android:button="@null"
+                        android:id="@+id/rb_preowned2"
+                        android:drawableStart="@drawable/custom_radio_selector"
+                        android:textColor="@color/Text_color"
+                        android:paddingEnd="@dimen/dp5"
+                        android:drawablePadding="@dimen/dp10"
+                        android:paddingLeft="@dimen/dp8"
+                        tools:ignore="RtlCompat" />
+
+
+
+
+                </RadioGroup>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,4 +19,10 @@
            described in the Privacy Policy, and summarized above. I understand that I can later withdraw this
            consent using My Profile settings or other tools for deleting my account.</string>
     <string name="deny_don_t_ask_again"><![CDATA[Deny & Don\'t ask again]]></string>
+    <string name="switch_off_and_then_switch_on_your_ira_smart_device_and_retry_pairing_the_device_to_your_phone">Switch-off and then Switch-on your IRA Smart Device and Retry pairing the device to your phone</string>
+    <string name="if_that_didn_t_work_your_ira_smart_device_may_not_be_charged_please_charge_it_for_2_hours">If that didn\'t work, Your IRA Smart Device may not be charged. Please charge it for 2 hours.</string>
+    <string name="after_the_ira_smart_device_is_charged_to_switch_it_on_press_down_and_hold_for_5_second_the_panic_button">After the IRA Smart Device is charged,to switch it on,press down and hold for 5 second the Panic Button</string>
+    <string name="scan_the_qr_code_of_the_herdum_smart_device_nprinted_on_the_device_s_box">Scan the QR code of the Herdum Smart Device,\nprinted on the device\'s box</string>
+    <string name="the_is_being_synced_in_herdum_server_please_note_that_secure_numbers_have_been_written_inside_the_herdum_software_and_in_the_phone_if_you_agree_press">The is being synced in Herdum Server. Please note that secure numbers have been written inside the Herdum software and in the phone.if you agree press</string>
+    <string name="now_this_ira_smart_device_can_only_work_with_your_phone_number">Now,this IRA Smart Device can only work with your phone number</string>
 </resources>

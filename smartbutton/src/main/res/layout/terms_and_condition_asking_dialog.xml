@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardtimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:cardCornerRadius="@dimen/dp4"
+        app:cardElevation="@dimen/dp4"
+        android:layout_marginStart="@dimen/dp15"
+        android:layout_marginEnd="@dimen/dp15"
+
+        >
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/dp25"
+
+
+            >
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+                android:text="You have not agreed to Terms and \nConditions of use "
+                android:paddingStart="@dimen/dp15"
+                android:paddingEnd="@dimen/dp15"
+                android:gravity="center"
+                android:id="@+id/tv_lbl1"
+                android:layout_marginTop="@dimen/dp15"
+                android:textColor="@color/Text_color"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+
+                android:text="Please Confirm if you wish to"
+                android:paddingStart="@dimen/dp15"
+                android:paddingEnd="@dimen/dp15"
+                android:gravity="center"
+                android:id="@+id/tv_lbl2"
+                app:layout_constraintTop_toBottomOf="@+id/tv_lbl1"
+                android:layout_marginTop="@dimen/dp7"
+                android:textColor="@color/Text_color"
+
+                />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_lbl2"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp25"
+
+
+                >
+
+            <TextView
+                android:layout_width="@dimen/dp100"
+                android:layout_height="@dimen/dp45"
+                android:background="@drawable/rectangel_submit_button"
+                android:text="Use"
+                android:textColor="@color/White"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/dp25"
+                android:id="@+id/tv_submit"
+                />
+
+            <TextView
+                android:layout_width="@dimen/dp100"
+                android:layout_height="@dimen/dp45"
+                android:background="@drawable/rectangel_cancel_button"
+                android:text="Not Use"
+                android:layout_marginStart="@dimen/dp15"
+                android:layout_marginBottom="@dimen/dp25"
+                android:textColor="@color/rb_selected"
+                android:gravity="center"
+                android:id="@+id/tv_cancel"
+                tools:ignore="RtlCompat" />
+
+
+
+
+            </LinearLayout>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
