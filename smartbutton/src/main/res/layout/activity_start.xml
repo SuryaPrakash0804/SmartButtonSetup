@@ -86,6 +86,7 @@
                 android:paddingEnd="@dimen/dp25"
                 android:paddingBottom="@dimen/dp7"
                 android:paddingTop="@dimen/dp7"
+                android:id="@+id/tv_setup"
                 app:layout_constraintTop_toBottomOf="@+id/iv_button"
                 android:layout_marginTop="@dimen/dp35"
                 app:layout_constraintLeft_toLeftOf="parent"

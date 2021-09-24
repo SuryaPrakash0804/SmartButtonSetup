@@ -54,7 +54,7 @@
             android:paddingStart="@dimen/dp8"
             android:button="@null"
             android:id="@+id/rb_smartbutton"
-            android:clickable="false"
+
             android:drawableStart="@drawable/custom_radio_selector"
             android:textColor="@color/Text_color"
             android:paddingEnd="@dimen/dp5"
@@ -74,7 +74,7 @@
             android:button="@null"
             android:id="@+id/rb_smartwatch"
             android:layout_marginTop="@dimen/dp10"
-            android:clickable="false"
+
             android:drawablePadding="@dimen/dp10"
             android:drawableStart="@drawable/custom_radio_selector"
             android:textColor="@color/Text_color"

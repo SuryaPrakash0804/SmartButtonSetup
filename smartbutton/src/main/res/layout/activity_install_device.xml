@@ -14,7 +14,7 @@
         android:background="@color/packageplan_selector"
         android:gravity="center"
 
-        android:text="Install Device"
+        android:text="@string/install_device"
         android:textColor="@color/rb_selected"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -59,7 +59,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Go"
+                    android:text="@string/go"
                     android:background="@drawable/rectangel_submit_button"
                     android:textColor="@color/White"
                     android:paddingStart="@dimen/dp35"
@@ -95,7 +95,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Now only the IRA Smart Device and your phone work together. You are all set to use IRA Device in pressure mode. If you want to setup voice-activation tere are few more steps. Do you want to Proceed with?"
+                    android:text="@string/now_only_the_ira_smart_device_and_your_phone_work_together_you_are_all_set_to_use_ira_device_in_pressure_mode_if_you_want_to_setup_voice_activation_tere_are_few_more_steps_do_you_want_to_proceed_with"
                     android:textColor="@color/Text_color"
                     />
 
@@ -110,7 +110,7 @@
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Pressure Mode"
+                        android:text="@string/pressure_mode"
                         android:textSize="@dimen/sp14"
                         android:checked="true"
                         android:layout_marginTop="@dimen/dp15"
@@ -129,7 +129,7 @@
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Voice Activated"
+                        android:text="@string/voice_activated"
                         android:textSize="@dimen/sp14"
                         android:checked="false"
                         android:layout_marginTop="@dimen/dp15"

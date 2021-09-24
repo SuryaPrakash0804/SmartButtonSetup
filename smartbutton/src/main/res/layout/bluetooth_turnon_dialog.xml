@@ -86,7 +86,7 @@
             android:textColor="@color/White"
             android:gravity="center"
             android:layout_marginBottom="@dimen/dp25"
-            android:id="@+id/tv_submit"
+            android:id="@+id/tv_turnon"
             />
 
         <TextView
