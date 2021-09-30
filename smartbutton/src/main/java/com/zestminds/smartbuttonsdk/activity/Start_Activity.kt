@@ -36,12 +36,22 @@ class Start_Activity : AppCompatActivity() {
         if (intent!=null && intent.getStringExtra("type")!=null){
             type=intent?.getStringExtra("type")!!
 
-            if (type.equals("1",true)){
+
+            if (type.equals("smartbutton",true))
+            {
                 iv_button.setImageResource(R.drawable.ic_smart_device_with_circle)
             }
             else{
                 iv_button.setImageResource(R.drawable.ic_smart_watch)
             }
+
+
+//            if (type.equals("1",true)){
+//                iv_button.setImageResource(R.drawable.ic_smart_device_with_circle)
+//            }
+//            else{
+//                iv_button.setImageResource(R.drawable.ic_smart_watch)
+//            }
         }
 
         clickOnView()

@@ -12,14 +12,12 @@ import com.zestminds.smartbuttonsdk.R
 import com.zestminds.smartbuttonsdk.activity.Start_Activity
 
 
-object CooseButton_Dialog{
-
-
+public class CooseButton_Dialog {
 
 
     fun showExitDialog(context: Context) {
 
-        var deviceType="smartwatch"
+        var deviceType = "smartwatch"
         var dialog_select = Dialog(context)
         dialog_select.window?.attributes?.windowAnimations = R.style.DialogAnimation
         dialog_select.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
@@ -28,15 +26,15 @@ object CooseButton_Dialog{
 
         val yes = dialog_select.findViewById(R.id.tv_submit) as TextView
         val no = dialog_select.findViewById(R.id.tv_cancel) as TextView
-        val rb_button=dialog_select.findViewById(R.id.radioGroup) as RadioGroup
+        val rb_button = dialog_select.findViewById(R.id.radioGroup) as RadioGroup
 
         rb_button.setOnCheckedChangeListener { radioGroup, i ->
-            when(i){
-                R.id.rb_smartbutton ->{
-                    deviceType="smartbutton"
+            when (i) {
+                R.id.rb_smartbutton -> {
+                    deviceType = "smartbutton"
                 }
-                R.id.rb_smartwatch ->{
-                    deviceType="smartwatch"
+                R.id.rb_smartwatch -> {
+                    deviceType = "smartwatch"
                 }
             }
         }
@@ -44,16 +42,10 @@ object CooseButton_Dialog{
         no.setOnClickListener { dialog_select.dismiss() }
 
         yes.setOnClickListener {
-            var intent=Intent(context,Start_Activity::class.java)
-            if (deviceType.equals("smartbutton",true))
-            {
-                intent.putExtra("type","1")
-                context.startActivity(intent)
-            }
-            else{
-                intent.putExtra("type","2")
-                context.startActivity(intent)
-            }
+            var intent = Intent(context, Start_Activity::class.java)
+
+            intent.putExtra("type", deviceType)
+            context.startActivity(intent)
             dialog_select.dismiss()
 
         }
@@ -63,11 +55,9 @@ object CooseButton_Dialog{
     }
 
 
-
-
     fun blueToothTusrnOnDialog(context: Context) {
 
-        var deviceType="smartwatch"
+        var deviceType = "smartwatch"
         var dialog_select = Dialog(context)
         dialog_select.window?.attributes?.windowAnimations = R.style.DialogAnimation
         dialog_select.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
@@ -84,7 +74,7 @@ object CooseButton_Dialog{
         yes.setOnClickListener {
 
             var adapter = BluetoothAdapter.getDefaultAdapter()
-            if (adapter.isEnabled){
+            if (adapter.isEnabled) {
                 adapter.disable()
             } else {
                 adapter.enable()
