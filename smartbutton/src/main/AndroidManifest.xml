@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.zestminds.smartbuttonsdk">
 
+    <uses-sdk tools:overrideLibrary="
+      androidx.camera.camera2, androidx.camera.core,
+      androidx.camera.view, androidx.camera.lifecycle" />
 
-
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application android:supportsRtl="true">
-        <activity android:name=".activity.TagDeviceToPhone_Activity"></activity>
+
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+
+        <activity android:name=".activity.ScanQRCode_Activity"></activity>
+        <activity android:name=".activity.TagDeviceToPhone_Activity" />
         <activity android:name=".activity.InstallDevice_Activity" />
         <activity android:name=".activity.VerifyingDeviceID_Activity" />
         <activity android:name=".activity.QRCode_Activity" />
