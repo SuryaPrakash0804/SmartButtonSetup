@@ -55,7 +55,7 @@ object CooseButton_Dialog {
     }
 
 
-    fun blueToothTusrnOnDialog(context: Context) {
+    fun blueToothTurnOnDialog(context: Context) {
 
         var deviceType = "smartwatch"
         var dialog_select = Dialog(context)
