@@ -12,7 +12,7 @@ import com.zestminds.smartbuttonsdk.R
 import com.zestminds.smartbuttonsdk.activity.Start_Activity
 
 
-public class CooseButton_Dialog {
+object CooseButton_Dialog {
 
 
     fun showExitDialog(context: Context) {
