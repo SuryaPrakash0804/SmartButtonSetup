@@ -2,7 +2,6 @@ package com.zestminds.smartbuttonsdk.activity
 
 import android.app.Dialog
 import android.bluetooth.BluetoothAdapter
-import android.content.Context
 import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
@@ -10,7 +9,7 @@ import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.zestminds.smartbuttonsdk.R
-import com.zestminds.smartbuttonsdk.dialog.CooseButton_Dialog.blueToothTurnOnDialog
+import com.zestminds.smartbuttonsdk.dialog.ChooseButton_Dialog.blueToothTurnOnDialog
 import com.zestminds.smartbuttonsdk.dialog.showToast
 import kotlinx.android.synthetic.main.activity_terms_condition.*
 

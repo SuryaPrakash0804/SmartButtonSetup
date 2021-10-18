@@ -3,13 +3,10 @@ package com.zestminds.smartbuttonsdk.activity
 import android.app.Dialog
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
-import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
-import android.widget.TextView
 import com.zestminds.smartbuttonsdk.R
-import com.zestminds.smartbuttonsdk.dialog.CooseButton_Dialog
 import kotlinx.android.synthetic.main.activity_switch_on_smart_button.*
 
 class SwitchOnSmartButton_Activity : AppCompatActivity() {

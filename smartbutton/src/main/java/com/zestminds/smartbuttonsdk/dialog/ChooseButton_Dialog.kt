@@ -12,7 +12,7 @@ import com.zestminds.smartbuttonsdk.R
 import com.zestminds.smartbuttonsdk.activity.Start_Activity
 
 
-object CooseButton_Dialog {
+object ChooseButton_Dialog {
 
 
     fun chooseButtonDialog(context: Context) {
