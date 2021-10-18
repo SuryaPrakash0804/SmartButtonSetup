@@ -15,7 +15,7 @@ import com.zestminds.smartbuttonsdk.activity.Start_Activity
 object CooseButton_Dialog {
 
 
-    fun showExitDialog(context: Context) {
+    fun chooseButtonDialog(context: Context) {
 
         var deviceType = "smartwatch"
         var dialog_select = Dialog(context)

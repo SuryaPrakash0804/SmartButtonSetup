@@ -18,7 +18,10 @@ import androidx.annotation.RequiresApi
 import androidx.core.app.ActivityCompat
 import com.zestminds.smartbuttonsdk.R
 import com.zestminds.smartbuttonsdk.bean.DevicesList
+import com.zestminds.smartbuttonsdk.dialog.hide
 import com.zestminds.smartbuttonsdk.dialog.showToast
+import com.zestminds.smartbuttonsdk.dialog.visible
+import kotlinx.android.synthetic.main.activity_paring.*
 
 class Paring_Activity : AppCompatActivity() {
 
@@ -56,10 +59,37 @@ class Paring_Activity : AppCompatActivity() {
 
 
     fun init(){
+        cv_step1.visible()
+        cv_step2.hide()
+        cv_try_again.hide()
         mHandler= Handler(Looper.getMainLooper())
+
+
+
+        clickOnView()
+
     }
 
 
+
+    private fun clickOnView(){
+
+        tv_continue.setOnClickListener {
+            cv_step1.hide()
+            cv_step2.visible()
+        }
+
+        tv_continuestep2.setOnClickListener {
+
+        }
+
+        tv_tryagain.setOnClickListener {
+            cv_step2.hide()
+            cv_try_again.hide()
+            cv_step1.visible()
+        }
+
+    }
 
     fun hasPermissions(permissions: Array<String>): Boolean {
         if (permissions != null) {
@@ -88,6 +118,7 @@ class Paring_Activity : AppCompatActivity() {
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>,
                                             grantResults: IntArray) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
         when (requestCode) {
             RECORD_REQUEST_CODE -> {
 

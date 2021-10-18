@@ -1,19 +1,9 @@
 package com.zestminds.smartbuttonsdk.activity
 
-import android.bluetooth.BluetoothGattCharacteristic
-import android.bluetooth.BluetoothGattService
-import android.content.*
-import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
-import android.os.IBinder
-import android.util.Log
-import android.widget.SimpleExpandableListAdapter
-import android.widget.TextView
-import androidx.annotation.RequiresApi
+import androidx.appcompat.app.AppCompatActivity
 import com.zestminds.smartbuttonsdk.R
-import com.zestminds.smartbuttonsdk.bluetoothService.BluetoothLeService
-import com.zestminds.smartbuttonsdk.bluetoothService.SampleGattAttributes
 import kotlinx.android.synthetic.main.activity_start.*
 
 class Start_Activity : AppCompatActivity() {
@@ -60,7 +50,7 @@ class Start_Activity : AppCompatActivity() {
 
     private fun clickOnView(){
         tv_setup.setOnClickListener {
-            
+            startActivity(Intent(this,TermsCondition_Activity::class.java))
         }
     }
 

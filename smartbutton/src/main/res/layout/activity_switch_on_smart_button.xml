@@ -71,29 +71,57 @@
                     android:textColor="@color/Text_color"
                     tools:ignore="RtlCompat" />
 
-                <TextView
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/tv_lbl"
-                    android:drawableLeft="@drawable/ic_long_press"
-                    android:text="Activate SOS hands-free with our advance and discrete Smart Button"
-                    android:gravity="center_vertical"
-                    android:drawablePadding="@dimen/dp8"
-                    android:drawableTint="@color/rb_selected"
-                    android:layout_marginEnd="@dimen/dp15"
-                    android:drawableRight="@drawable/ic_baseline_info_24"
-                    android:layout_marginTop="@dimen/dp5"
-                    android:id="@+id/tv_lblcharge"
-                    android:textColor="@color/Text_color"
-                    tools:ignore="RtlCompat" />
+                    android:id="@+id/iv_infolay"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:drawableLeft="@drawable/ic_long_press"
+                        android:text="Activate SOS hands-free with our advance and discrete Smart Button"
+                        android:gravity="center_vertical"
+                        android:drawablePadding="@dimen/dp8"
+                        android:layout_marginEnd="@dimen/dp25"
+                       app:layout_constraintLeft_toLeftOf="parent"
+
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+
+                        android:id="@+id/tv_lblcharge"
+                        android:textColor="@color/Text_color"
+                        tools:ignore="RtlCompat" />
+
+
+                    <ImageView
+                        android:layout_width="@dimen/dp35"
+                        android:layout_height="@dimen/dp35"
+                        android:src="@drawable/ic_baseline_info_24"
+                        android:id="@+id/iv_info"
+                        android:layout_marginEnd="@dimen/dp15"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:padding="@dimen/dp7"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toRightOf="@+id/tv_lblcharge"
+                        android:tint="@color/rb_selected"
+                        tools:ignore="UseAppTint" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/dp250"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_lblcharge"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_infolay"
 
                     app:layout_constraintLeft_toLeftOf="parent"
                     android:layout_margin="@dimen/dp35"

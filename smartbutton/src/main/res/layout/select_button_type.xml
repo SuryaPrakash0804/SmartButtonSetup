@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:pixlui="http://schemas.android.com/apk/com.neopixl.pixlui"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    tools:ignore="RtlCompat"
-    app:cardCornerRadius="@dimen/dp4"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/dp5"
     app:cardElevation="@dimen/dp4"
-    android:layout_height="wrap_content">
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
 
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginBottom="@dimen/dp15"
+
+
 
         >
 
@@ -22,105 +24,124 @@
 
 
 
-    <TextView
-        android:id="@+id/tv_title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        android:gravity="center_vertical"
-        android:padding="@dimen/dp15"
-        android:text="What are you setting up?"
-        android:textColor="@color/Text_color"
-
-        android:textSize="@dimen/dp15"
-         />
-
-    <RadioGroup
-        android:id="@+id/radioGroup"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dp25"
-        android:layout_marginStart="@dimen/dp15"
-        android:orientation="vertical"
-       >
-
-
-        <RadioButton
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/ira_smart_button"
-            android:textSize="@dimen/sp14"
-            android:checked="false"
-            android:paddingStart="@dimen/dp8"
-            android:button="@null"
-            android:id="@+id/rb_smartbutton"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/dp15"
 
-            android:drawableStart="@drawable/custom_radio_selector"
-            android:textColor="@color/Text_color"
-            android:paddingEnd="@dimen/dp5"
-            android:drawablePadding="@dimen/dp10"
-            android:paddingLeft="@dimen/dp8"
-            tools:ignore="RtlCompat" />
+            >
 
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-            android:text="@string/ira_smart_watch"
-            android:textSize="@dimen/sp14"
-            android:checked="true"
-            android:paddingStart="@dimen/dp8"
-            android:button="@null"
-            android:id="@+id/rb_smartwatch"
-            android:layout_marginTop="@dimen/dp10"
-
-            android:drawablePadding="@dimen/dp10"
-            android:drawableStart="@drawable/custom_radio_selector"
-            android:textColor="@color/Text_color"
-            android:paddingEnd="@dimen/dp5"
-
-            android:paddingLeft="@dimen/dp8"
-            />
 
 
-    </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp15"
+                android:text="What are you setting up?"
+                android:textColor="@color/Text_color"
+
+                android:textSize="@dimen/dp15"
+                />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp25"
+                android:layout_marginStart="@dimen/dp15"
+                android:orientation="vertical"
+                >
 
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/dp25"
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ira_smart_button"
+                    android:textSize="@dimen/sp14"
+                    android:checked="false"
+                    android:paddingStart="@dimen/dp8"
+                    android:button="@null"
+                    android:id="@+id/rb_smartbutton"
 
-        >
-
-        <TextView
-            android:layout_width="@dimen/dp100"
-            android:layout_height="@dimen/dp45"
-            android:background="@drawable/rectangel_submit_button"
-            android:text="Submit"
-            android:textColor="@color/White"
-            android:gravity="center"
-            android:id="@+id/tv_submit"
-            />
-
-        <TextView
-            android:layout_width="@dimen/dp100"
-            android:layout_height="@dimen/dp45"
-            android:background="@drawable/rectangel_cancel_button"
-            android:text="Cancel"
-            android:layout_marginStart="@dimen/dp15"
-            android:textColor="@color/rb_selected"
-            android:gravity="center"
-            android:id="@+id/tv_cancel"
-            />
-
-    </LinearLayout>
+                    android:drawableStart="@drawable/custom_radio_selector"
+                    android:textColor="@color/Text_color"
+                    android:paddingEnd="@dimen/dp5"
+                    android:drawablePadding="@dimen/dp10"
+                    android:paddingLeft="@dimen/dp8"
+                    tools:ignore="RtlCompat" />
 
 
-    </LinearLayout>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/ira_smart_watch"
+                    android:textSize="@dimen/sp14"
+                    android:checked="true"
+                    android:paddingStart="@dimen/dp8"
+                    android:button="@null"
+                    android:id="@+id/rb_smartwatch"
+                    android:layout_marginTop="@dimen/dp10"
+
+                    android:drawablePadding="@dimen/dp10"
+                    android:drawableStart="@drawable/custom_radio_selector"
+                    android:textColor="@color/Text_color"
+                    android:paddingEnd="@dimen/dp5"
+
+                    android:paddingLeft="@dimen/dp8"
+                    />
+
+
+            </RadioGroup>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp25"
+
+                >
+
+                <TextView
+                    android:layout_width="@dimen/dp100"
+                    android:layout_height="@dimen/dp45"
+                    android:background="@drawable/rectangel_submit_button"
+                    android:text="Submit"
+                    android:textColor="@color/White"
+                    android:gravity="center"
+                    android:id="@+id/tv_submit"
+                    />
+
+                <TextView
+                    android:layout_width="@dimen/dp100"
+                    android:layout_height="@dimen/dp45"
+                    android:background="@drawable/rectangel_cancel_button"
+                    android:text="Cancel"
+                    android:layout_marginStart="@dimen/dp15"
+                    android:textColor="@color/rb_selected"
+                    android:gravity="center"
+                    android:id="@+id/tv_cancel"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </RelativeLayout>
 
 
 </androidx.cardview.widget.CardView>
