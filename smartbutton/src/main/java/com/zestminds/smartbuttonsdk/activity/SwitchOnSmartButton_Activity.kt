@@ -1,6 +1,7 @@
 package com.zestminds.smartbuttonsdk.activity
 
 import android.app.Dialog
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
@@ -34,7 +35,7 @@ class SwitchOnSmartButton_Activity : AppCompatActivity() {
             }
 
             tv_continue.setOnClickListener {
-
+                startActivity(Intent(this,Pairing_Activity::class.java))
             }
         }
 

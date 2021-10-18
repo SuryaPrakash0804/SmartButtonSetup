@@ -23,7 +23,7 @@ import com.zestminds.smartbuttonsdk.dialog.showToast
 import com.zestminds.smartbuttonsdk.dialog.visible
 import kotlinx.android.synthetic.main.activity_paring.*
 
-class Paring_Activity : AppCompatActivity() {
+class Pairing_Activity : AppCompatActivity() {
 
 
 

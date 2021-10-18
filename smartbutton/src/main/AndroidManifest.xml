@@ -26,7 +26,7 @@
         <activity android:name=".activity.VerifyingDeviceID_Activity" />
         <activity android:name=".activity.QRCode_Activity" />
         <activity android:name=".activity.Installing_Device_Activity" />
-        <activity android:name=".activity.Paring_Activity" />
+        <activity android:name=".activity.Pairing_Activity" />
         <activity android:name=".activity.SwitchOnSmartButton_Activity" />
         <activity android:name=".activity.TermsCondition_Activity" />
         <activity android:name=".activity.Start_Activity" />
