@@ -1,108 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-
+    android:orientation="vertical"
+    tools:ignore="RtlCompat"
+    app:cardCornerRadius="@dimen/dp4"
+    app:cardElevation="@dimen/dp4"
+    android:layout_height="wrap_content">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
-    android:layout_height="@dimen/dp55"
-    app:layout_constraintLeft_toLeftOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintRight_toRightOf="parent"
-        android:id="@+id/cl_title"
-    android:background="@color/App_Background"
-    >
-
-    <ImageView
-        android:layout_width="@dimen/dp55"
-        android:layout_height="match_parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:src="@drawable/ic_bluetooth_popup_blue"
-        android:padding="@dimen/dp4"
-
-        />
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cl_title"
-        android:text="Turn on Bluetooth"
-        android:paddingStart="@dimen/dp15"
-        android:paddingEnd="@dimen/dp15"
-
-        android:layout_marginTop="@dimen/dp15"
-        android:id="@+id/tv_lbl1"
-        android:textColor="@color/rb_selected"
-
-
-
-        />
-
-
-    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_lbl1"
-        android:text="Requesting permission to turn on Bluetooth.Do you want to do this? "
-        android:paddingStart="@dimen/dp15"
-        android:paddingEnd="@dimen/dp15"
-        android:gravity="center"
-        android:id="@+id/tv_lbl2"
-        android:layout_marginTop="@dimen/dp15"
-        android:textColor="@color/Text_color"
-
-        />
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_lbl2"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/dp25"
-
-
         >
 
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp55"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/cl_title"
+            android:background="@color/App_Background"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/dp55"
+                android:layout_height="match_parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:src="@drawable/ic_bluetooth_popup_blue"
+                android:padding="@dimen/dp4"
+
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
         <TextView
-            android:layout_width="@dimen/dp100"
-            android:layout_height="@dimen/dp45"
-            android:background="@drawable/rectangel_submit_button"
-            android:text="Turn On"
-            android:textColor="@color/White"
-            android:gravity="center"
-            android:layout_marginBottom="@dimen/dp25"
-            android:id="@+id/tv_turnon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cl_title"
+            android:text="Turn on Bluetooth"
+            android:paddingStart="@dimen/dp15"
+            android:paddingEnd="@dimen/dp15"
+
+            android:layout_marginTop="@dimen/dp15"
+            android:id="@+id/tv_lbl1"
+            android:textColor="@color/rb_selected"
+
+
+
             />
 
+
         <TextView
-            android:layout_width="@dimen/dp100"
-            android:layout_height="@dimen/dp45"
-            android:background="@drawable/rectangel_cancel_button"
-            android:text="Close"
-            android:layout_marginStart="@dimen/dp15"
-            android:layout_marginBottom="@dimen/dp25"
-            android:textColor="@color/rb_selected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_lbl1"
+            android:text="Requesting permission to turn on Bluetooth.Do you want to do this? "
+            android:paddingStart="@dimen/dp15"
+            android:paddingEnd="@dimen/dp15"
             android:gravity="center"
-            android:id="@+id/tv_cancel"
-            tools:ignore="RtlCompat" />
+            android:id="@+id/tv_lbl2"
+            android:layout_marginTop="@dimen/dp15"
+            android:textColor="@color/Text_color"
 
-    </LinearLayout>
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_lbl2"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp25"
+
+
+            >
+
+            <TextView
+                android:layout_width="@dimen/dp100"
+                android:layout_height="@dimen/dp45"
+                android:background="@drawable/rectangel_submit_button"
+                android:text="Turn On"
+                android:textColor="@color/White"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/dp25"
+                android:id="@+id/tv_turnon"
+                />
+
+            <TextView
+                android:layout_width="@dimen/dp100"
+                android:layout_height="@dimen/dp45"
+                android:background="@drawable/rectangel_cancel_button"
+                android:text="Close"
+                android:layout_marginStart="@dimen/dp15"
+                android:layout_marginBottom="@dimen/dp25"
+                android:textColor="@color/rb_selected"
+                android:gravity="center"
+                android:id="@+id/tv_cancel"
+                tools:ignore="RtlCompat" />
+
+        </LinearLayout>
 
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+
+
