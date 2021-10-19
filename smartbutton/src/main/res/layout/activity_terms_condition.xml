@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".activity.Start_Activity">
 
@@ -16,34 +17,28 @@
 
         android:text="Terms and Policies"
         android:textColor="@color/rb_selected"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        />
 
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         app:cardCornerRadius="@dimen/dp4"
         app:cardElevation="@dimen/dp4"
         android:layout_margin="@dimen/dp15"
-        app:layout_constraintTop_toBottomOf="@+id/tv_title"
-        app:layout_constraintBottom_toBottomOf="parent"
+
 
        >
 
 
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="parent"
-            android:layout_marginBottom="@dimen/dp25"
+            android:layout_margin="@dimen/dp25"
 
 
 
@@ -52,16 +47,16 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:minHeight="@dimen/dp350"
+
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 android:lineSpacingExtra="@dimen/dp2"
                 android:text="@string/terms_and_policy"
-                android:padding="@dimen/dp25"
-                android:layout_marginTop="@dimen/dp15"
-                android:scrollbars="vertical"
+                android:padding="@dimen/dp15"
 
+                android:scrollbars="vertical"
+               android:layout_above="@+id/cb_agree"
                 app:layout_constraintBottom_toTopOf="@+id/cb_agree"
                 android:id="@+id/tv_lbl"
                 android:textColor="@color/Text_color"
@@ -71,11 +66,8 @@
             <CheckBox
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tv_lbl"
-                app:layout_constraintBottom_toTopOf="@+id/tv_submit"
-                android:text="I Agree.Let's setup my IRA Smart Device to my Phone."
+                android:layout_above="@+id/iv_submit"
+                android:text="@string/i_agree_let_s_setup_my_ira_smart_device_to_my_phone"
                 android:id="@+id/cb_agree"
                 android:buttonTint="@color/rb_selected"
                 android:paddingLeft="@dimen/dp10"
@@ -90,21 +82,20 @@
                 android:textColor="@color/White"
                 android:src="@drawable/ic_baseline_arrow_forward_24"
                 android:padding="@dimen/dp15"
-                app:layout_constraintTop_toBottomOf="@+id/cb_agree"
+
                 android:layout_marginTop="@dimen/dp15"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                android:id="@+id/tv_submit"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/iv_submit"
 
                 />
 
 
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
 
 
 
     </androidx.cardview.widget.CardView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
