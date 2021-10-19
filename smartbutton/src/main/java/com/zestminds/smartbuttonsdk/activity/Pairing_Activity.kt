@@ -108,8 +108,7 @@ class Pairing_Activity : AppCompatActivity() {
         ActivityCompat.requestPermissions(
             this,
             arrayOf(Manifest.permission.ACCESS_COARSE_LOCATION,
-                Manifest.permission.WRITE_EXTERNAL_STORAGE
-                ,Manifest.permission.READ_EXTERNAL_STORAGE),
+                Manifest.permission.READ_EXTERNAL_STORAGE),
             RECORD_REQUEST_CODE
         )
     }
