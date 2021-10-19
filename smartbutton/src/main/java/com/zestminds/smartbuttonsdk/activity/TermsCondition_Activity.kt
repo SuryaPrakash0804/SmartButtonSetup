@@ -6,6 +6,7 @@ import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
+import android.text.method.ScrollingMovementMethod
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.zestminds.smartbuttonsdk.R
@@ -31,6 +32,8 @@ class TermsCondition_Activity : AppCompatActivity() {
 
     fun init(){
 
+
+        tv_lbl.movementMethod=ScrollingMovementMethod()
 
         showpermissionDialog()
 
